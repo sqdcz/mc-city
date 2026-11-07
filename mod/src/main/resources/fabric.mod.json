@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "citygen",
+  "version": "0.1.0",
+  "name": "CityGen",
+  "description": "在原生地形之上叠加确定性的城市地表规划（路网 / 地块 / 分区）。",
+  "authors": [
+    "衰气的船只"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.ship.citygen.CityGenMod"
+    ],
+    "client": [
+      "dev.ship.citygen.CityGenClient"
+    ]
+  },
+  "suggests": {
+    "howtogo": ">=0.2.0"
+  },
+  "mixins": [
+    "citygen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}
